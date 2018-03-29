@@ -1,0 +1,11 @@
+source_id: "lasermarker"
+features:
+  - id: 0
+    position: [32.4494, -3.64448, 0.0]
+    description: imark_point_lasermarker_0
+  - id: 1
+    position: [0.268546, 2.29909, 0.0]
+    description: imark_point_lasermarker_1
+  - id: 2
+    position: [0.612173, 1.44947, 0.0]
+    description: imark_point_lasermarker_2

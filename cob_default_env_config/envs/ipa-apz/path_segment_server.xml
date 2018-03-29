@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- environment seetings -->
+  <arg name="robot_env" default="$(optenv ROBOT_ENV !!NO_ROBOT_ENV_SET!!)"/>
+  <arg name="pkg_env_config" default="$(find cob_default_env_config)" />
+  <arg name="pkg_nav_env_config" default="$(find ipa_navigation_environment_config)"/>
+
+  <!--- Run path_segment_server_node -->
+  <node name="path_segment_server_node" pkg="ipa_path_segment_server" type="path_segment_server_node" >
+    <rosparam file="$(arg pkg_nav_env_config)/envs/$(arg robot_env)/nav/path_segment_server.yaml" command="load" />
+    <param name="path_segments_file_address" value="$(arg pkg_env_config)/envs/$(arg robot_env)/path_segments.yaml"/>
+  </node>
+
+</launch>
