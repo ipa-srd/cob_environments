@@ -7,72 +7,6 @@ setup_poses: [[0, 0, 0], [0, -2, 0], [0, -4, 0]] # list of poses [x[m], y[m], ya
 
 #########################################################################
 #################                                       #################
-#################           STATIC-OBSTACLES            ################# 
-#################                                       #################
-#########################################################################
-
-# Machine-room 1
-ocl_box_01:
-  model: box
-  model_type: urdf
-  position: [ 2.6, -3.5, 0]
-  orientation: [ 0, 0, 0]
-ocl_column_01:
-  model: column
-  model_type: urdf
-  position: [ 15.5, 6.5, 0]
-  orientation: [ 0, 0, 0]
-ocl_box_02:
-  model: box
-  model_type: urdf
-  position: [ 4.5, 8.5, 0]
-  orientation: [ 0, 0, 0]
-
-# Machine-room 2
-ocl_box_03:
-  model: box
-  model_type: urdf
-  position: [ 27.3, -5.3, 0]
-  orientation: [ 0, 0, 0]
-ocl_column_02:
-  model: column
-  model_type: urdf
-  position: [ 24.8, 8.3, 0]
-  orientation: [ 0, 0, 0]
-
-# Super-market-2 1
-ocl_box_04:
-  model: box
-  model_type: urdf
-  position: [ 2.6, -11.6, 0]
-  orientation: [ 0, 0, 0]
-ocl_column_03:
-  model: column
-  model_type: urdf
-  position: [ 16.5, -13.0, 0]
-  orientation: [ 0, 0, 0]
-
-# Hallway
-ocl_box_05:
-  model: box
-  model_type: urdf
-  position: [ 37.4, -33.0, 0]
-  orientation: [ 0, 0, 0]
-ocl_column_04:
-  model: column
-  model_type: urdf
-  position: [ 35.8, -16.8, 0]
-  orientation: [ 0, 0, 0]
-ocl_box_06:
-  model: box
-  model_type: urdf
-  position: [ 28.05, -23.4, 0]
-  orientation: [ 0, 0, 0]
-
-
-
-#########################################################################
-#################                                       #################
 #################             MACHINE-ROOM              ################# 
 #################                                       #################
 #########################################################################
@@ -221,7 +155,7 @@ assembly_area:
 box_01:
   model: box
   model_type: urdf
-  position: [ 8.5, 3.5, 0]
+  position: [ 15, 6, 0]
   orientation: [ 0, 0, 0]
 robot_arm_01:
   model: robot_arm
@@ -231,7 +165,7 @@ robot_arm_01:
 box_02:
   model: box
   model_type: urdf
-  position: [ 14.0, -0.5, 0]
+  position: [ 9, 4, 0]
   orientation: [ 0, 0, 0]
 robot_arm_02:
   model: robot_arm
@@ -241,12 +175,27 @@ robot_arm_02:
 box_03:
   model: box
   model_type: urdf
-  position: [ 9, 1.25, 0]
+  position: [ 12, -2, 0]
   orientation: [ 0, 0, 0]
 robot_arm_03:
   model: robot_arm
   model_type: urdf
   position: [ 9, 1.25, 0.5]
+  orientation: [ 0, 0, 0]
+box_04:
+  model: box
+  model_type: urdf
+  position: [ 18, -6, 0]
+  orientation: [ 0, 0, 0]
+box_05:
+  model: box
+  model_type: urdf
+  position: [ 24, 5, 0]
+  orientation: [ 0, 0, 0]
+box_06:
+  model: box
+  model_type: urdf
+  position: [ 26, -5, 0]
   orientation: [ 0, 0, 0]
 
 # Conveyor with Robots 1
