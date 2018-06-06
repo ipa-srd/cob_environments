@@ -1,4 +1,4 @@
-image: map.pgm
+image: map_fullroom.pgm
 resolution: 0.050000
 origin: [-21.000000, -41.000000, 0.000000]
 negate: 0
