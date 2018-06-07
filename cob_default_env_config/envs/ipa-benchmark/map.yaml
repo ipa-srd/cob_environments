@@ -1,4 +1,4 @@
-image: map_fullroom.pgm
+image: map_empty_few_wo_walls.pgm
 resolution: 0.050000
 origin: [-21.000000, -41.000000, 0.000000]
 negate: 0
